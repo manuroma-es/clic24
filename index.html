@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Cerrajeros en Cuenca 24 horas · Clic 24</title>
+<meta name="description" content="Cerrajeros en Cuenca 24 horas. Abrimos puertas, coches y cajas fuertes, y cambiamos cerraduras en tu casa o tu negocio.">
+<meta name="theme-color" content="#0A0D14">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cabecera/puerta-poster.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="img/cabecera/puerta-poster-movil.webp" media="(max-width: 760px)">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="barra" id="barra">
+  <a class="barra__logo" href="#inicio" aria-label="Clic 24, inicio">
+    <svg class="logo" viewBox="0 0 212 56" aria-hidden="true">
+      <defs>
+        <linearGradient id="lgLaton" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3D58A"/><stop offset=".48" stop-color="#C9A24A"/><stop offset="1" stop-color="#8A6428"/></linearGradient>
+        <linearGradient id="lgLatonTxt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7E2A6"/><stop offset=".55" stop-color="#C9A24A"/><stop offset="1" stop-color="#9C7432"/></linearGradient>
+      </defs>
+      <path d="M43.32 18.82A20 20 0 1 1 29.18 4.68" fill="none" stroke="url(#lgLaton)" stroke-width="2.4" stroke-linecap="round"/>
+      <g stroke="#F3D58A" stroke-width="2.2" stroke-linecap="round"><path d="M40.6 7.4 43.4 4.6"/><path d="M45 14.1 48.2 12.6"/><path d="M33.6 3.1 34.9 .1"/></g>
+      <path d="M24 13.5a6.5 6.5 0 0 1 3.6 11.9l1.9 8.6q.3 1.5-1.2 1.5h-8.6q-1.5 0-1.2-1.5l1.9-8.6A6.5 6.5 0 0 1 24 13.5z" fill="url(#lgLaton)"/>
+      <circle cx="22.2" cy="18.4" r="1.6" fill="#FFF4D6" opacity=".55"/>
+      <text x="62" y="40" font-weight="700" font-size="34" letter-spacing="-.5" fill="#EFE6D2">Clic</text>
+      <text x="129" y="40" font-style="italic" font-weight="500" font-size="34" fill="url(#lgLatonTxt)">24</text>
+    </svg>
+  </a>
+  <nav class="barra__menu" aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#como-trabajamos">Cómo trabajamos</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#" class="barra__llamar js-boton"><span class="punto" aria-hidden="true"></span>Llámanos</a>
+  </nav>
+</header>
+
+<main>
+  <section class="cine" id="inicio" aria-label="Cabecera">
+    <div class="cine__pin">
+      <picture class="cine__poster">
+        <source media="(max-width: 760px)" srcset="img/cabecera/puerta-poster-movil.webp" type="image/webp">
+        <source srcset="img/cabecera/puerta-poster.webp" type="image/webp">
+        <img src="img/cabecera/puerta-poster.jpg" alt="Manos con guantes de cerrajero abriendo el bombín de una puerta con llave de tensión y ganzúa" width="1920" height="1088" fetchpriority="high">
+      </picture>
+      <video class="cine__video" id="cineVideo" aria-hidden="true" tabindex="-1" muted playsinline preload="auto"
+        data-pc="img/cabecera/puerta-scroll-1920.mp4"
+        data-movil="img/cabecera/puerta-scroll-movil.mp4"></video>
+
+      <div class="cine__capa cine__sombra" aria-hidden="true"></div>
+      <!-- solo PC: penumbra en la esquina inferior izquierda que tapa la ganzúa suelta del vídeo (seg. ~5,3–6,3) -->
+      <div class="cine__capa cine__ganzua" aria-hidden="true"></div>
+      <!-- destello suave en la cerradura cuando cede (tapa la salida de las manos del plano) -->
+      <div class="cine__capa cine__clic" aria-hidden="true"></div>
+      <div class="cine__capa cine__oro" aria-hidden="true"></div>
+      <!-- Estado final (p = 1): .fin-resplandor en <html>. Pantalla llena de oro suave (--resplandor-*).
+           La escena de coches (.coche) arranca de aquí. -->
+      <div class="cine__capa cine__resplandor" aria-hidden="true"></div>
+      <div class="cine__capa cine__grano" aria-hidden="true"></div>
+
+      <div class="cine__texto">
+        <svg class="sello" viewBox="-4 -4 56 56" aria-hidden="true">
+          <circle class="sello__destello" cx="24" cy="24" r="22" fill="none" stroke="#F3D58A" stroke-width="1.5"/>
+          <path d="M43.32 18.82A20 20 0 1 1 29.18 4.68" fill="none" stroke="url(#lgLaton)" stroke-width="2.2" stroke-linecap="round"/>
+          <g class="sello__chispa" stroke="#F3D58A" stroke-width="2" stroke-linecap="round"><path d="M40.6 7.4 43.4 4.6"/><path d="M45 14.1 48.2 12.6"/><path d="M33.6 3.1 34.9 .1"/></g>
+          <g class="sello__bocallave"><path d="M24 13.5a6.5 6.5 0 0 1 3.6 11.9l1.9 8.6q.3 1.5-1.2 1.5h-8.6q-1.5 0-1.2-1.5l1.9-8.6A6.5 6.5 0 0 1 24 13.5z" fill="url(#lgLaton)"/></g>
+        </svg>
+        <p class="kicker"><span class="kicker__linea" aria-hidden="true"></span>Cerrajeros en Cuenca · 24 horas</p>
+        <h1 class="titular"><span class="titular__l">Te abrimos la puerta.</span> <span class="titular__l titular__l--oro">A cualquier hora.</span></h1>
+        <div class="cine__segundo">
+          <p class="subtitulo">Abrimos puertas, coches y cajas fuertes, y cambiamos cerraduras en tu casa o tu negocio. Llámanos y vamos para allá.</p>
+          <div class="botones">
+            <a href="#" class="boton boton--laton js-boton">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>
+              <span>Llámanos ahora</span>
+            </a>
+            <a href="#" class="boton boton--wa js-boton">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3z" fill="currentColor"/></svg>
+              <span>Escríbenos por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pista" aria-hidden="true">
+        <span class="pista__texto">Desliza para abrir</span>
+        <span class="pista__riel"><svg class="pista__llave" viewBox="0 0 16 40"><circle cx="8" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12v26M8 30h4M8 35h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTE DOS · Coches. Arranca del mismo oro (--resplandor-borde) en que termina la cabecera
+       (.fin-resplandor / "clic24:resplandor"), así que no hay corte.
+       Recorrido (js/coche.js): el oro se recoge como un resplandor en la cerradura del coche y abre el plano
+       (img/coche/coche-faros*.webp = fotograma 0 del vídeo) → el vídeo (Google Flow) se recorre con el scroll:
+       ganzúa en la cerradura, la mano abre la puerta, interior ámbar → la luz ámbar del interior llena la
+       pantalla y dentro de ella asoma la caja fuerte (inicio de la parte tres). Sin rayas ni cortes. -->
+  <section class="coche" id="servicios" aria-label="Apertura de coches">
+    <div class="coche__pin">
+      <picture class="coche__capa coche__inicio-marco">
+        <source media="(max-width: 760px)" srcset="img/coche/coche-faros-movil.webp" type="image/webp">
+        <img class="coche__inicio coche__plano" src="img/coche/coche-faros.webp" alt="" width="1920" height="1088" decoding="async">
+      </picture>
+      <video class="coche__video coche__plano" aria-hidden="true" tabindex="-1" muted playsinline preload="none"
+        data-pc="img/coche/coche-scroll-1920.mp4"
+        data-movil="img/coche/coche-scroll-movil.mp4"></video>
+      <picture class="coche__capa coche__fin-marco">
+        <source media="(max-width: 760px)" srcset="img/coche/coche-final-movil.webp" type="image/webp">
+        <img class="coche__fin coche__plano" src="img/coche/coche-final.webp" alt="" width="1920" height="1088" decoding="async">
+      </picture>
+      <div class="coche__capa coche__sombra" aria-hidden="true"></div>
+      <canvas class="coche__capa coche__luz" aria-hidden="true"></canvas>
+      <div class="coche__capa coche__vineta" aria-hidden="true"></div>
+      <!-- Inicio de la parte tres: la caja fuerte asoma dentro del destello de los faros.
+           Es el primer fotograma exacto del vídeo de la caja (img/caja/caja-inicio.webp = caja-scroll-*.mp4 en t = 0),
+           así que la escena .caja (debajo) toma el relevo con el <video> sin que se note el cambio. -->
+      <img class="coche__capa coche__caja" src="img/caja/caja-inicio.webp" alt="" width="1920" height="1088" decoding="async" loading="lazy">
+      <div class="coche__capa coche__grano" aria-hidden="true"></div>
+
+      <!-- Textos de la escena Coches (textos.md · Tinta) -->
+      <div class="coche__texto">
+        <p class="kicker coche__kicker"><span class="kicker__linea" aria-hidden="true"></span>Apertura de coches</p>
+        <div class="coche__bloque">
+          <h3 class="coche__titular">Clic. <span class="coche__titular-oro">Y tu coche, abierto.</span></h3>
+          <p class="coche__linea">Abrimos tu coche sin dañar la cerradura ni la carrocería, estés donde estés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTE TRES · Cajas fuertes (js/caja.js). Arranca del final de la parte dos (.fin-faros / "clic24:faros"):
+       la caja fuerte que se abrió en el destello de los faros pasa a ser este <video> (mismo fotograma),
+       que se superpone con margin-top:-100vh y aparece justo cuando .coche suelta su pin.
+       Recorrido: la mano gira la rueda (scrub 0 → 6,6 s) → luz dorada por la junta de la puerta hasta llenar
+       la pantalla → debajo, la caja ya abierta (7,3 → 7,95 s) → la luz se recoge y deja ver el interior dorado →
+       la luz interior vuelve a llenar la pantalla y se funde a #0A0D14. -->
+  <section class="caja" aria-label="Apertura de cajas fuertes">
+    <div class="caja__pin">
+      <img class="caja__capa caja__still" src="img/caja/caja-inicio.webp" alt="" width="1920" height="1088" decoding="async">
+      <video class="caja__capa caja__video" aria-hidden="true" tabindex="-1" muted playsinline preload="none"
+        data-pc="img/caja/caja-scroll-1920.mp4"
+        data-movil="img/caja/caja-scroll-movil.mp4"></video>
+      <div class="caja__capa caja__sombra" aria-hidden="true"></div>
+      <canvas class="caja__capa caja__luz" aria-hidden="true"></canvas>
+      <div class="caja__capa caja__velo" aria-hidden="true"></div>
+      <div class="caja__capa caja__oro" aria-hidden="true"></div>
+      <div class="caja__capa caja__noche" aria-hidden="true"></div>
+      <div class="caja__capa caja__grano" aria-hidden="true"></div>
+
+      <!-- Anillo de latón que gira con el scroll (eco de la rueda de la combinación); lo dibuja js/caja.js -->
+      <svg class="caja__anillo" viewBox="-110 -110 220 220" aria-hidden="true"><g class="caja__anillo-giro"></g><path class="caja__indice" d="M0 -104 L-3.2 -110 H3.2Z"/></svg>
+
+      <!-- Textos de la escena Cajas fuertes (textos.md · Tinta) -->
+      <div class="caja__texto">
+        <p class="kicker caja__kicker"><span class="kicker__linea" aria-hidden="true"></span>Cajas fuertes</p>
+        <h3 class="caja__titular"><span class="caja__t1">Clic.</span> <span class="caja__titular-oro">Y tu caja fuerte, abierta.</span></h3>
+        <p class="caja__linea">Abrimos, reparamos e instalamos cajas fuertes, con total discreción.</p>
+        <p class="caja__clave" aria-hidden="true"><span>37</span><i></i><span>12</span><i></i><span>84</span></p>
+      </div>
+    </div>
+    <!-- Solo con movimiento reducido: la caja ya abierta, en estático, fundida a la noche -->
+    <div class="caja__abierta-estatica" aria-hidden="true"></div>
+  </section>
+
+  <!-- Fin de la parte tres: al llegar al final se añade .fin-caja a <html> y se emite "clic24:caja".
+       La pantalla queda en #0A0D14 (la luz interior de la caja fundida a la noche).
+       La siguiente sección (.tarjetas, abajo) se superpone a su final y toma el relevo dentro de la luz dorada. -->
+  <!-- PARTE CUATRO · «Más servicios» como PANEL DE LLAVES del taller (js/tarjetas.js; recursos de Pixel en img/panel-llaves/).
+       Se superpone al final de .caja (margin-top negativo, z-index 2) y nace de su luz dorada: cuando la luz
+       interior de la caja llena la pantalla, .tarjetas__oro sube encima con el mismo oro (centrado en --ix/--iy
+       de .caja), tapa el fundido a la noche y se recoge en un halo (.tarjetas__halo) detrás del tablero.
+       Tablero de nogal con tres ganchos de latón; de cada uno cuelga una llave y una etiqueta de cartón (texto en HTML).
+       Con el scroll las llaves se encienden una a una (luz de flexo, --e por estación). Ratón: la llave se balancea y la
+       etiqueta se da la vuelta (cara: número y nombre; dorso: nombre y texto). Táctil / movimiento reducido: etiqueta
+       ya por el dorso (texto legible sin hover). Móvil: un tablero largo, una llave por fila.
+       Salida: las llaves se alejan (escala 0.9, opacidad baja) y el halo baja y se apaga hacia la siguiente sección.
+       Los SVG van como <img> (sus id se repiten entre archivos). Sin fondo propio: todo va sobre la noche continua. -->
+  <section class="tarjetas" id="mas-servicios" aria-labelledby="tarjetas-kicker">
+    <div class="tarjetas__luz" aria-hidden="true">
+      <div class="tarjetas__halo"></div>
+      <div class="tarjetas__oro"></div>
+    </div>
+    <div class="tarjetas__escena">
+      <p class="kicker tarjetas__kicker" id="tarjetas-kicker"><span class="kicker__linea" aria-hidden="true"></span>Más servicios<span class="kicker__linea kicker__linea--der" aria-hidden="true"></span></p>
+      <div class="panel">
+        <div class="panel__tablero">
+          <ul class="tarjetas__lista">
+        <li class="tarjeta estacion" tabindex="0">
+          <div class="estacion__marco">
+            <div class="estacion__halo" aria-hidden="true"></div>
+            <img class="estacion__gancho" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="estacion__llave" aria-hidden="true"><img src="img/panel-llaves/llave-1.svg" alt="" width="180" height="468"><span class="estacion__sombra"></span></div>
+            <img class="estacion__gancho estacion__gancho--frente" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="etiqueta">
+              <div class="etiqueta__cara etiqueta__cara--frente" aria-hidden="true">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num">01</span><span class="etiqueta__raya"></span><span class="etiqueta__nombre">Cerraduras</span></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+              <div class="etiqueta__cara etiqueta__cara--dorso">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num" aria-hidden="true">01</span><h3 class="tarjeta__titulo">Cerraduras</h3><p class="tarjeta__texto">Cambiamos bombines e instalamos cerraduras de seguridad en puertas y ventanas.</p></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="tarjeta estacion" tabindex="0">
+          <div class="estacion__marco">
+            <div class="estacion__halo" aria-hidden="true"></div>
+            <img class="estacion__gancho" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="estacion__llave" aria-hidden="true"><img src="img/panel-llaves/llave-2.svg" alt="" width="180" height="468"><span class="estacion__sombra"></span></div>
+            <img class="estacion__gancho estacion__gancho--frente" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="etiqueta">
+              <div class="etiqueta__cara etiqueta__cara--frente" aria-hidden="true">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num">02</span><span class="etiqueta__raya"></span><span class="etiqueta__nombre">Seguridad</span></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+              <div class="etiqueta__cara etiqueta__cara--dorso">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num" aria-hidden="true">02</span><h3 class="tarjeta__titulo">Seguridad</h3><p class="tarjeta__texto">Bombines antibumping, cerrojos y puertas acorazadas. Te aconsejamos lo que de verdad necesitas, sin venderte de más.</p></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="tarjeta estacion" tabindex="0">
+          <div class="estacion__marco">
+            <div class="estacion__halo" aria-hidden="true"></div>
+            <img class="estacion__gancho" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="estacion__llave" aria-hidden="true"><img src="img/panel-llaves/llave-3.svg" alt="" width="180" height="468"><span class="estacion__sombra"></span></div>
+            <img class="estacion__gancho estacion__gancho--frente" src="img/panel-llaves/gancho.svg" alt="" width="80" height="120">
+            <div class="etiqueta">
+              <div class="etiqueta__cara etiqueta__cara--frente" aria-hidden="true">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num">03</span><span class="etiqueta__raya"></span><span class="etiqueta__nombre">Copias de llaves</span></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+              <div class="etiqueta__cara etiqueta__cara--dorso">
+                <img class="etiqueta__carton" src="img/panel-llaves/etiqueta.svg" alt="" width="184" height="345">
+                <div class="etiqueta__texto"><span class="etiqueta__num" aria-hidden="true">03</span><h3 class="tarjeta__titulo">Copias de llaves</h3><p class="tarjeta__texto">Copias de llaves normales, de seguridad y mandos de garaje, hechas al momento.</p></div>
+                <span class="etiqueta__sombra"></span>
+              </div>
+            </div>
+          </div>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTE CUATRO BIS · «Conócenos» (js/conocenos.js) ============
+       Vídeo de Pixel (img/conocenos/): Andrés Cuesta a la izquierda; chasquea los dedos (~4,5 s, el «clic») y desde ~5 s
+       su tarjeta de presentación (latón y noche, hecha con código) salta a la derecha con los textos de Tinta.
+       PC: escena fijada; el vídeo (conocenos-cerrajero-scroll.mp4, todo fotogramas clave) se recorre con el scroll.
+       Recoge el halo de .tarjetas y entrega el suyo (.conocenos__halo) al bloque de confianza (js/confianza.js).
+       Móvil: sin pin; conocenos-cerrajero.mp4 se reproduce una vez al entrar y la tarjeta salta en el clic.
+       Movimiento reducido: último fotograma (conocenos-final.jpg) y tarjeta fija. Persona inventada para la demo. -->
+  <section class="conocenos" id="conocenos" aria-labelledby="conocenos-titulo">
+    <div class="conocenos__escena">
+      <div class="conocenos__fijo">
+        <div class="conocenos__halo" aria-hidden="true"></div>
+        <div class="conocenos__medio">
+          <img class="conocenos__plano conocenos__final" src="img/conocenos/conocenos-final.jpg" alt="Andrés Cuesta, cerrajero de Clic 24, chasqueando los dedos bajo una luz dorada" width="1920" height="1088" loading="lazy" decoding="async">
+          <video class="conocenos__plano conocenos__video" aria-hidden="true" tabindex="-1" muted playsinline preload="none"
+            data-pc="img/conocenos/conocenos-cerrajero-scroll.mp4"
+            data-movil="img/conocenos/conocenos-cerrajero.mp4"></video>
+          <div class="conocenos__clic" aria-hidden="true"></div>
+        </div>
+        <div class="conocenos__destello" aria-hidden="true"></div>
+        <div class="conocenos__cabecera">
+          <p class="kicker conocenos__kicker"><span class="kicker__linea" aria-hidden="true"></span>Conócenos</p>
+          <h2 class="conocenos__titulo" id="conocenos-titulo">El del clic</h2>
+        </div>
+        <div class="conocenos__tarjeta">
+          <div class="presenta">
+            <span class="presenta__marca" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><g fill="none" stroke="url(#lgLaton)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10.2"/><circle cx="12" cy="9.6" r="2.6"/><path d="M10.9 11.9 10.2 17h3.6l-.7-5.1"/></g></svg>
+            </span>
+            <p class="presenta__nombre presenta__pieza">Andrés Cuesta</p>
+            <span class="presenta__filete presenta__pieza" aria-hidden="true"></span>
+            <p class="presenta__dato presenta__pieza"><span class="presenta__cifra">18 años</span> abriendo puertas en Cuenca</p>
+            <p class="presenta__frase presenta__pieza">No hay cerradura que se me resista. Llego rápido, te explico lo que voy a hacer y te digo el precio antes de tocar nada.</p>
+            <p class="presenta__micro presenta__pieza">Cerrajero de oficio · Disponible 24 horas, también festivos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTE CINCO · Bloque de confianza (js/mapa-cuenca.js + js/confianza.js) ============
+       Mapa real de Cuenca (OpenStreetMap). La llave dorada va por calles reales de Carretería al casco antiguo.
+       Sin número visible: 555 000 000 solo vive en data-telefono. Los botones solo animan (no llaman ni abren chat). -->
+  <section class="confianza" id="como-trabajamos" aria-labelledby="confianza-titulo">
+    <div class="confianza__escena">
+      <div class="confianza__luz" aria-hidden="true"><div class="confianza__calor"></div><div class="confianza__foco"></div></div>
+
+      <figure class="confianza__mapa" role="img" aria-label="Mapa de Cuenca: el cerrajero sale de la calle Carretería y sube por las calles hasta la Plaza Mayor, en el casco antiguo.">
+        <svg class="mapa" xmlns="http://www.w3.org/2000/svg" viewBox="-1700 -1500 3400 3000" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <radialGradient id="mapaZona" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#F3D58A" stop-opacity=".16"/><stop offset=".55" stop-color="#C9A24A" stop-opacity=".07"/><stop offset="1" stop-color="#C9A24A" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="mapaBrillo" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+          </defs>
+          <circle class="mapa__zona" cx="300" cy="-180" r="900" fill="url(#mapaZona)"/>
+          <circle class="mapa__zona-borde" cx="300" cy="-180" r="760" fill="none"/>
+          <g class="mapa__base">
+            <path class="mapa__rio-cauce" d=""/>
+            <path class="mapa__rio" d=""/>
+            <path class="mapa__agua" d=""/>
+            <path class="mapa__cortado" d=""/>
+            <path class="mapa__senda" d=""/>
+            <path class="mapa__menor" d=""/>
+            <path class="mapa__mayor" d=""/>
+            <path id="etqJucar" class="mapa__guia" d=""/>
+            <path id="etqHuecar" class="mapa__guia" d=""/>
+            <text class="mapa__rotulo-rio"><textPath href="#etqJucar" startOffset="50%" text-anchor="middle">Río Júcar</textPath></text>
+            <text class="mapa__rotulo-rio"><textPath href="#etqHuecar" startOffset="50%" text-anchor="middle">Río Huécar</textPath></text>
+          </g>
+          <path class="mapa__plan" d=""/>
+          <path class="mapa__ruta-brillo" d=""/>
+          <path class="mapa__ruta" d=""/>
+        </svg>
+        <!-- capa en píxeles de pantalla (tamaño constante): llave, destello, marcas y rótulos -->
+        <div class="mapa__capa" aria-hidden="true">
+          <span class="mapa__punto mapa__punto--inicio"></span>
+          <span class="mapa__punto mapa__punto--fin"></span>
+          <span class="mapa__lugar mapa__lugar--inicio">Carretería</span>
+          <span class="mapa__lugar mapa__lugar--fin">Casco antiguo</span>
+          <span class="mapa__destello"></span>
+          <span class="mapa__llave">
+            <span class="mapa__llave-luz"></span>
+            <svg viewBox="0 0 64 28"><g class="mapa__llave-giro"><path fill="url(#lgLaton)" fill-rule="evenodd" d="M12 3a11 11 0 1 1 0 22a11 11 0 0 1 0-22zm0 6.2a4.8 4.8 0 1 0 0 9.6a4.8 4.8 0 0 0 0-9.6zM22 11.6h38.5q2 0 2 2.4t-2 2.4H58v5.4h-4.2v-5.4h-2.6v3.6H47v-3.6H22z"/><path d="M22 12.4h37" stroke="#FFF4D6" stroke-opacity=".55" stroke-width=".8"/></g></svg>
+          </span>
+          <span class="mapa__llegado">¡Hemos llegado!</span>
+        </div>
+        <figcaption class="mapa__osm">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></figcaption>
+      </figure>
+      <div class="confianza__velo" aria-hidden="true"></div>
+
+      <div class="confianza__texto">
+        <p class="kicker confianza__kicker"><span class="kicker__linea" aria-hidden="true"></span>Urgencias 24 h</p>
+        <h2 class="confianza__titulo" id="confianza-titulo"><span class="confianza__l">El cerrajero</span> <span class="confianza__l confianza__l--oro">ya viene de camino</span></h2>
+        <p class="confianza__parrafo">Llámanos, dinos dónde estás y salimos hacia allí. Te decimos el precio antes de empezar, sin sorpresas.</p>
+        <div class="botones confianza__botones">
+          <a href="#" class="boton boton--laton js-boton" data-telefono="555 000 000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg><span>Llámanos ahora</span></a>
+          <a href="#" class="boton boton--wa js-boton" data-telefono="555 000 000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3z" fill="currentColor"/></svg><span>Escríbenos por WhatsApp</span></a>
+        </div>
+        <ul class="confianza__garantias">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="url(#lgLaton)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></svg>24 h y festivos</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="url(#lgLaton)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.6V4.5a1 1 0 0 1 1-1h8.1l8 8a1.4 1.4 0 0 1 0 2l-7.1 7.1a1.4 1.4 0 0 1-2 0z"/><circle cx="8.2" cy="8.2" r="1.6"/></g></svg>Precio cerrado</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="url(#lgLaton)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8 19.5 5.6v6c0 4.6-3.1 8-7.5 9.6-4.4-1.6-7.5-5-7.5-9.6v-6z"/><path d="m8.6 12.1 2.4 2.4 4.6-4.8"/></g></svg>Trabajo garantizado</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTE SEIS · Opiniones en forma de partes de avería «Partes resueltos» (js/partes.js) ============
+       Arranca del resplandor cálido (.confianza__calor) en que termina el bloque de confianza: .partes__calor
+       recoge ese calor arriba y lo funde con la noche (sin fondo propio, sin corte plano).
+       Cada opinión es una hoja de albarán en papel (formulario impreso + letra a boli, fuente Caveat en fonts/);
+       clavadas en un tablón de corcho (CSS/SVG). Al entrar, cada hoja vuela en 3D y cae sobre el tablón, la chincheta
+       se clava, la letra se «escribe» y el sello «RESUELTO» se estampa (escala + giro + golpe). Opiniones de ejemplo para la demo (textos.md · sección 4). -->
+  <section class="partes" id="opiniones" aria-labelledby="partes-titulo">
+    <div class="partes__calor" aria-hidden="true"></div>
+    <div class="partes__contenido">
+      <header class="partes__cabeza">
+        <p class="kicker partes__kicker"><span class="kicker__linea" aria-hidden="true"></span>Opiniones<span class="kicker__linea kicker__linea--der" aria-hidden="true"></span></p>
+        <h2 class="partes__titulo" id="partes-titulo">Partes resueltos</h2>
+        <p class="partes__entradilla">Cada aviso es una historia. Estas son algunas de las que hemos cerrado con final feliz.</p>
+      </header>
+      <ol class="partes__lista">
+        <li class="parte">
+          <span class="parte__sombra" aria-hidden="true"></span>
+          <article class="parte__ficha" aria-labelledby="parte-0127">
+            <div class="parte__membrete" aria-hidden="true"><span class="parte__marca">Clic 24 · Cerrajeros</span><span class="parte__tipo">Parte de trabajo / Albarán</span></div>
+            <header class="parte__cabeza">
+              <h3 class="parte__numero" id="parte-0127"><span class="parte__nlabel">Parte nº</span> <span class="parte__n">0127</span></h3>
+              <p class="parte__hora"><span class="parte__etq">Hora de aviso</span> <time class="mano" datetime="03:12">03:12 h</time></p>
+            </header>
+            <dl class="parte__datos">
+              <div class="parte__fila"><dt class="parte__etq">Avería</dt><dd class="mano">«Salí a tirar la basura en pijama y la puerta se cerró detrás de mí.»</dd></div>
+              <div class="parte__fila"><dt class="parte__etq">Solución</dt><dd class="mano">«Apertura sin daños.»</dd></div>
+            </dl>
+            <figure class="parte__cliente">
+              <p class="parte__etq parte__etq--caja" aria-hidden="true">Conformidad del cliente</p>
+              <blockquote class="parte__cita"><p class="mano">«Volví a mi sofá antes de que se enfriara la manta.»</p></blockquote>
+              <figcaption class="parte__firma"><span class="parte__etq" aria-hidden="true">Firma</span> <span class="parte__nombre mano">— Lucía, Cuenca</span></figcaption>
+            </figure>
+            <p class="parte__sello"><span>Resuelto</span></p>
+          </article>
+          <span class="parte__chincheta" aria-hidden="true"></span>
+        </li>
+        <li class="parte">
+          <span class="parte__sombra" aria-hidden="true"></span>
+          <article class="parte__ficha" aria-labelledby="parte-0134">
+            <div class="parte__membrete" aria-hidden="true"><span class="parte__marca">Clic 24 · Cerrajeros</span><span class="parte__tipo">Parte de trabajo / Albarán</span></div>
+            <header class="parte__cabeza">
+              <h3 class="parte__numero" id="parte-0134"><span class="parte__nlabel">Parte nº</span> <span class="parte__n">0134</span></h3>
+              <p class="parte__hora"><span class="parte__etq">Hora de aviso</span> <time class="mano" datetime="14:40">14:40 h</time></p>
+            </header>
+            <dl class="parte__datos">
+              <div class="parte__fila"><dt class="parte__etq">Avería</dt><dd class="mano">«Llave rota dentro de la cerradura del local, con los clientes esperando.»</dd></div>
+              <div class="parte__fila"><dt class="parte__etq">Solución</dt><dd class="mano">«Extracción y cambio de bombín.»</dd></div>
+            </dl>
+            <figure class="parte__cliente">
+              <p class="parte__etq parte__etq--caja" aria-hidden="true">Conformidad del cliente</p>
+              <blockquote class="parte__cita"><p class="mano">«Abrimos a la hora de siempre. Ni se enteraron.»</p></blockquote>
+              <figcaption class="parte__firma"><span class="parte__etq" aria-hidden="true">Firma</span> <span class="parte__nombre mano">— Javier, bar en el centro</span></figcaption>
+            </figure>
+            <p class="parte__sello"><span>Resuelto</span></p>
+          </article>
+          <span class="parte__chincheta" aria-hidden="true"></span>
+        </li>
+        <li class="parte">
+          <span class="parte__sombra" aria-hidden="true"></span>
+          <article class="parte__ficha" aria-labelledby="parte-0141">
+            <div class="parte__membrete" aria-hidden="true"><span class="parte__marca">Clic 24 · Cerrajeros</span><span class="parte__tipo">Parte de trabajo / Albarán</span></div>
+            <header class="parte__cabeza">
+              <h3 class="parte__numero" id="parte-0141"><span class="parte__nlabel">Parte nº</span> <span class="parte__n">0141</span></h3>
+              <p class="parte__hora"><span class="parte__etq">Hora de aviso</span> <time class="mano" datetime="22:05">22:05 h</time></p>
+            </header>
+            <dl class="parte__datos">
+              <div class="parte__fila"><dt class="parte__etq">Avería</dt><dd class="mano">«Nos mudamos y no sabíamos cuántas copias de la llave había por ahí.»</dd></div>
+              <div class="parte__fila"><dt class="parte__etq">Solución</dt><dd class="mano">«Cambio de cerradura y 4 copias nuevas.»</dd></div>
+            </dl>
+            <figure class="parte__cliente">
+              <p class="parte__etq parte__etq--caja" aria-hidden="true">Conformidad del cliente</p>
+              <blockquote class="parte__cita"><p class="mano">«Ahora dormimos con la tranquilidad de saber quién entra en casa.»</p></blockquote>
+              <figcaption class="parte__firma"><span class="parte__etq" aria-hidden="true">Firma</span> <span class="parte__nombre mano">— Marta y Dani</span></figcaption>
+            </figure>
+            <p class="parte__sello"><span>Resuelto</span></p>
+          </article>
+          <span class="parte__chincheta" aria-hidden="true"></span>
+        </li>
+        <li class="parte">
+          <span class="parte__sombra" aria-hidden="true"></span>
+          <article class="parte__ficha" aria-labelledby="parte-0158">
+            <div class="parte__membrete" aria-hidden="true"><span class="parte__marca">Clic 24 · Cerrajeros</span><span class="parte__tipo">Parte de trabajo / Albarán</span></div>
+            <header class="parte__cabeza">
+              <h3 class="parte__numero" id="parte-0158"><span class="parte__nlabel">Parte nº</span> <span class="parte__n">0158</span></h3>
+              <p class="parte__hora"><span class="parte__etq">Hora de aviso</span> <time class="mano" datetime="07:30">07:30 h</time></p>
+            </header>
+            <dl class="parte__datos">
+              <div class="parte__fila"><dt class="parte__etq">Avería</dt><dd class="mano">«El niño escondió las llaves del coche… y de casa.»</dd></div>
+              <div class="parte__fila"><dt class="parte__etq">Solución</dt><dd class="mano">«Apertura y copias de repuesto.»</dd></div>
+            </dl>
+            <figure class="parte__cliente">
+              <p class="parte__etq parte__etq--caja" aria-hidden="true">Conformidad del cliente</p>
+              <blockquote class="parte__cita"><p class="mano">«Las llaves aparecieron en la lavadora. Las copias, en nuestro cajón.»</p></blockquote>
+              <figcaption class="parte__firma"><span class="parte__etq" aria-hidden="true">Firma</span> <span class="parte__nombre mano">— Pilar</span></figcaption>
+            </figure>
+            <p class="parte__sello"><span>Resuelto</span></p>
+          </article>
+          <span class="parte__chincheta" aria-hidden="true"></span>
+        </li>
+      </ol>
+      <p class="partes__nota">(Opiniones de ejemplo para la demo; con un cliente real se cambian por las suyas.)</p>
+    </div>
+  </section>
+
+  <!-- ============ PARTE SIETE · Cierre «¿Puerta cerrada? Nosotros la abrimos.» (js/cierre.js) ============
+       PC: escena fijada al scroll. La cámara avanza hacia una cerradura de latón (SVG) hasta entrar por el ojo de la
+       llave; dentro del mecanismo (pistones, muelles, cilindro) las letras del titular encajan una a una como pistones;
+       sacudida y la cerradura estalla en piezas hacia el espectador; queda el cierre con los botones.
+       Móvil: la misma historia por tiempo al entrar en pantalla. Movimiento reducido: estado final directo.
+       Botones solo de demo: href="#", el número (555 000 000) solo vive en data-telefono. -->
+  <section class="cierre" id="cierre" aria-labelledby="cierre-titulo">
+    <div class="cierre__escena">
+      <div class="cierre__puerta" aria-hidden="true"></div>
+      <div class="cierre__meca" aria-hidden="true">
+        <svg class="meca" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="mcFondo" cx="50%" cy="50%" r="65%"><stop offset="0" stop-color="#2A1E10"/><stop offset=".45" stop-color="#120D08"/><stop offset="1" stop-color="#050608"/></radialGradient>
+            <linearGradient id="mcPin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6E4F1C"/><stop offset=".3" stop-color="#F3D58A"/><stop offset=".55" stop-color="#C9A24A"/><stop offset="1" stop-color="#5E4216"/></linearGradient>
+            <linearGradient id="mcMuelle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8C8C8C"/><stop offset=".5" stop-color="#E8E4DA"/><stop offset="1" stop-color="#6C6A66"/></linearGradient>
+            <linearGradient id="mcCilindro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3D58A"/><stop offset=".5" stop-color="#A9822F"/><stop offset="1" stop-color="#4E3714"/></linearGradient>
+          </defs>
+          <rect width="1600" height="900" fill="url(#mcFondo)"/>
+          <ellipse cx="800" cy="450" rx="980" ry="608" fill="none" stroke="rgba(201,162,74,0.050)" stroke-width="1.0"/>
+          <ellipse cx="800" cy="450" rx="840" ry="521" fill="none" stroke="rgba(201,162,74,0.075)" stroke-width="1.4"/>
+          <ellipse cx="800" cy="450" rx="700" ry="434" fill="none" stroke="rgba(201,162,74,0.100)" stroke-width="1.8"/>
+          <ellipse cx="800" cy="450" rx="560" ry="347" fill="none" stroke="rgba(201,162,74,0.125)" stroke-width="2.2"/>
+          <ellipse cx="800" cy="450" rx="420" ry="260" fill="none" stroke="rgba(201,162,74,0.150)" stroke-width="2.6"/>
+          <rect x="0" y="288" width="1600" height="14" fill="url(#mcCilindro)" opacity=".9"/>
+          <rect x="0" y="598" width="1600" height="14" fill="url(#mcCilindro)" opacity=".9"/>
+          <rect class="meca__corte" x="0" y="301" width="1600" height="2" fill="#F3D58A"/>
+          <rect class="meca__corte" x="0" y="597" width="1600" height="2" fill="#F3D58A"/>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="82" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M120 44 L98 60 L142 76 L98 92 L142 108 L98 124 L142 140 L98 156 L142 172 L98 188 L142 204 L98 220 L142 236 L120 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="93" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="99" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="82" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M93 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="99" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="252" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M290 44 L268 60 L312 76 L268 92 L312 108 L268 124 L312 140 L268 156 L312 172 L268 188 L312 204 L268 220 L312 236 L290 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="263" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="269" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="252" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M263 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="269" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="422" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M460 44 L438 60 L482 76 L438 92 L482 108 L438 124 L482 140 L438 156 L482 172 L438 188 L482 204 L438 220 L482 236 L460 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="433" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="439" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="422" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M433 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="439" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="592" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M630 44 L608 60 L652 76 L608 92 L652 108 L608 124 L652 140 L608 156 L652 172 L608 188 L652 204 L608 220 L652 236 L630 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="603" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="609" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="592" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M603 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="609" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="762" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M800 44 L778 60 L822 76 L778 92 L822 108 L778 124 L822 140 L778 156 L822 172 L778 188 L822 204 L778 220 L822 236 L800 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="773" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="779" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="762" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M773 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="779" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="932" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M970 44 L948 60 L992 76 L948 92 L992 108 L948 124 L992 140 L948 156 L992 172 L948 188 L992 204 L948 220 L992 236 L970 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="943" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="949" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="932" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M943 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="949" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="1102" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M1140 44 L1118 60 L1162 76 L1118 92 L1162 108 L1118 124 L1162 140 L1118 156 L1162 172 L1118 188 L1162 204 L1118 220 L1162 236 L1140 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="1113" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="1119" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="1102" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M1113 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="1119" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="1272" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M1310 44 L1288 60 L1332 76 L1288 92 L1332 108 L1288 124 L1332 140 L1288 156 L1332 172 L1288 188 L1332 204 L1288 220 L1332 236 L1310 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="1283" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="1289" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="1272" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M1283 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="1289" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+          <g class="meca__pila">
+            <rect class="meca__camara" x="1442" y="20" width="76" height="268" rx="6"/>
+            <g class="meca__muelle"><path d="M1480 44 L1458 60 L1502 76 L1458 92 L1502 108 L1458 124 L1502 140 L1458 156 L1502 172 L1458 188 L1502 204 L1458 220 L1502 236 L1480 252" fill="none" stroke="url(#mcMuelle)" stroke-width="5" stroke-linejoin="round"/></g>
+            <g class="meca__driver"><rect x="1453" y="246" width="54" height="86" rx="9" fill="url(#mcPin)"/><rect x="1459" y="252" width="9" height="72" rx="4" fill="rgba(255,244,210,.45)"/></g>
+            <rect class="meca__camara" x="1442" y="612" width="76" height="268" rx="6"/>
+            <g class="meca__llavin"><path d="M1453 568 h54 v118 l-27 26 l-27 -26z" fill="url(#mcPin)"/><rect x="1459" y="576" width="9" height="104" rx="4" fill="rgba(255,244,210,.4)"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="cierre__zoom" aria-hidden="true">
+        <svg class="cerradura" viewBox="0 0 1000 1000">
+          <defs>
+            <radialGradient id="ccLaton" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#FFF1C1"/><stop offset=".22" stop-color="#F3D58A"/><stop offset=".52" stop-color="#C9A24A"/><stop offset=".82" stop-color="#8A6526"/><stop offset="1" stop-color="#4E3714"/></radialGradient>
+            <linearGradient id="ccBisel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1C1"/><stop offset=".5" stop-color="#9C7432"/><stop offset="1" stop-color="#3E2A0E"/></linearGradient>
+            <radialGradient id="ccTornillo" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#FFF1C1"/><stop offset=".5" stop-color="#B8913E"/><stop offset="1" stop-color="#5E4216"/></radialGradient>
+            <radialGradient id="ccOjo" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#000"/><stop offset=".7" stop-color="#050403"/><stop offset="1" stop-color="#1A1206"/></radialGradient>
+            <path id="ccArco" d="M500 500 m-205 0 a205 205 0 1 1 410 0"/>
+          </defs>
+          <circle cx="500" cy="500" r="318" fill="rgba(0,0,0,.55)" transform="translate(10 18)"/>
+          <circle cx="500" cy="500" r="312" fill="url(#ccBisel)"/>
+          <circle cx="500" cy="500" r="298" fill="url(#ccLaton)"/>
+          <circle cx="500" cy="500" r="270" fill="none" stroke="rgba(60,38,8,.55)" stroke-width="3"/>
+          <circle cx="500" cy="500" r="266" fill="none" stroke="rgba(255,240,200,.35)" stroke-width="1.5"/>
+          <circle cx="500" cy="500" r="150" fill="none" stroke="rgba(60,38,8,.35)" stroke-width="2"/>
+          <text class="cerradura__marca" font-size="44" letter-spacing="14" fill="rgba(70,45,10,.6)" stroke="rgba(255,240,200,.25)" stroke-width=".8"><textPath href="#ccArco" startOffset="50%" text-anchor="middle">CLIC 24</textPath></text>
+          <g transform="translate(337.4 337.4) rotate(30)"><circle r="17" fill="url(#ccTornillo)" stroke="rgba(40,25,5,.7)" stroke-width="2"/><rect x="-12" y="-2.2" width="24" height="4.4" rx="2" fill="rgba(40,25,5,.75)"/></g><g transform="translate(662.6 337.4) rotate(67)"><circle r="17" fill="url(#ccTornillo)" stroke="rgba(40,25,5,.7)" stroke-width="2"/><rect x="-12" y="-2.2" width="24" height="4.4" rx="2" fill="rgba(40,25,5,.75)"/></g><g transform="translate(662.6 662.6) rotate(104)"><circle r="17" fill="url(#ccTornillo)" stroke="rgba(40,25,5,.7)" stroke-width="2"/><rect x="-12" y="-2.2" width="24" height="4.4" rx="2" fill="rgba(40,25,5,.75)"/></g><g transform="translate(337.4 662.6) rotate(141)"><circle r="17" fill="url(#ccTornillo)" stroke="rgba(40,25,5,.7)" stroke-width="2"/><rect x="-12" y="-2.2" width="24" height="4.4" rx="2" fill="rgba(40,25,5,.75)"/></g>
+          <rect x="440" y="400" width="120" height="230" rx="60" fill="url(#ccBisel)"/>
+          <rect x="450" y="410" width="100" height="210" rx="50" fill="url(#ccLaton)"/>
+          <path d="M500 428a42 42 0 0 1 22 77.8L538 600h-76l16-94.2A42 42 0 0 1 500 428z" fill="url(#ccOjo)" stroke="rgba(40,25,5,.9)" stroke-width="3"/>
+          <path d="M478 506 462 600" stroke="rgba(255,240,200,.25)" stroke-width="2"/>
+          <ellipse cx="420" cy="380" rx="120" ry="60" fill="rgba(255,250,230,.16)" transform="rotate(-35 420 380)"/>
+        </svg>
+      </div>
+      <div class="cierre__fragmentos" aria-hidden="true"></div>
+      <div class="cierre__contenido">
+        <h2 class="cierre__titulo" id="cierre-titulo"><span class="cierre__frase">¿Puerta cerrada?</span> <span class="cierre__frase cierre__frase--oro">Nosotros la abrimos.</span></h2>
+        <p class="cierre__texto">Una llamada y vamos de camino. A cualquier hora del día o de la noche.</p>
+        <div class="botones cierre__botones">
+          <a href="#" class="boton boton--laton js-boton" data-telefono="555 000 000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg><span>Llámanos ahora</span></a>
+          <a href="#" class="boton boton--wa js-boton" data-telefono="555 000 000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3z" fill="currentColor"/></svg><span>Escríbenos por WhatsApp</span></a>
+        </div>
+        <p class="cierre__linea">Sin formularios ni esperas: hablas directamente con el cerrajero.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="pie__dentro">
+    <p class="pie__marca"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="url(#lgLaton)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.2"/><path d="M10.6 11.9 9.8 20h4.4l-.8-8.1"/></g></svg>Clic 24 · Cerrajeros urgentes en Cuenca y alrededores</p>
+    <nav class="pie__nav" aria-label="Legal">
+      <ul class="pie__legal"><li><a href="#">Aviso legal</a></li><li><a href="#">Privacidad</a></li><li><a href="#">Cookies</a></li></ul>
+    </nav>
+    <p class="pie__creditos"><span>Web creada por landing now</span><span class="pie__osm"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a></span></p>
+  </div>
+</footer>
+
+<script src="js/cabecera.js" defer></script>
+<script src="js/coche.js" defer></script>
+<script src="js/caja.js" defer></script>
+<script src="js/tarjetas.js" defer></script>
+<script src="js/conocenos.js" defer></script>
+<script src="js/mapa-cuenca.js" defer></script>
+<script src="js/confianza.js" defer></script>
+<script src="js/partes.js" defer></script>
+<script src="js/cierre.js" defer></script>
+</body>
+</html>

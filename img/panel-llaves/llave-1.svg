@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 520" width="200" height="520">
+  <title>Llave de paletón clásica (Cerraduras)</title>
+  <defs>
+    <linearGradient id="k1-brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5E4416"/>
+      <stop offset=".22" stop-color="#A9822F"/>
+      <stop offset=".42" stop-color="#F3D58A"/>
+      <stop offset=".58" stop-color="#C9A24A"/>
+      <stop offset="1" stop-color="#5A4014"/>
+    </linearGradient>
+    <linearGradient id="k1-bow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F3D58A"/>
+      <stop offset=".35" stop-color="#C9A24A"/>
+      <stop offset=".75" stop-color="#8A6524"/>
+      <stop offset="1" stop-color="#4E3810"/>
+    </linearGradient>
+    <linearGradient id="k1-bit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E2C171"/>
+      <stop offset=".5" stop-color="#B38C3A"/>
+      <stop offset="1" stop-color="#6B4E1A"/>
+    </linearGradient>
+  </defs>
+  <g id="llave" class="llave">
+    <g id="ring" class="ring">
+      <!-- arandela principal con agujero (centro 100,70 · r 22) -->
+      <path fill="url(#k1-bow)" stroke="#4A3410" stroke-width="1.6" fill-rule="evenodd"
+        d="M100 14c13 0 22 8 26 15 11 0 24 9 24 25 9 6 14 14 14 24 0 16-13 26-26 27-6 11-19 19-38 19s-32-8-38-19c-13-1-26-11-26-27 0-10 5-18 14-24 0-16 13-25 24-25 4-7 13-15 26-15z M100 48a22 22 0 1 0 0 44a22 22 0 1 0 0-44z"/>
+      <!-- filete interior decorativo -->
+      <circle cx="100" cy="70" r="31" fill="none" stroke="#5A4014" stroke-width="1.4" opacity=".55"/>
+      <circle cx="100" cy="70" r="33" fill="none" stroke="#F3D58A" stroke-width=".8" opacity=".45"/>
+      <!-- pequeños remaches ornamentales -->
+      <g fill="#F3D58A" opacity=".75">
+        <circle cx="100" cy="27" r="3"/><circle cx="57" cy="70" r="3"/><circle cx="143" cy="70" r="3"/>
+      </g>
+      <path d="M68 40c8-10 20-15 32-15" fill="none" stroke="#FFF3CF" stroke-width="2.2" stroke-linecap="round" opacity=".55"/>
+    </g>
+    <g id="key" class="key">
+      <!-- cuello -->
+      <path fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.4" d="M84 124h32l-6 18H90z"/>
+      <!-- collarines -->
+      <rect x="84" y="142" width="32" height="9" rx="3" fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.2"/>
+      <rect x="88" y="154" width="24" height="6" rx="2.5" fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.2"/>
+      <!-- caña -->
+      <rect x="92" y="158" width="16" height="318" rx="3" fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.4"/>
+      <rect x="86" y="372" width="28" height="7" rx="3" fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.2"/>
+      <!-- paletón con guardas -->
+      <path fill="url(#k1-bit)" stroke="#4A3410" stroke-width="1.4" stroke-linejoin="round"
+        d="M108 392h50v15h-13v10h13v22h-9v9h9v15h-50z"/>
+      <path d="M108 427h30" stroke="#4A3410" stroke-width="1.2" opacity=".6"/>
+      <!-- punta -->
+      <path fill="url(#k1-brass)" stroke="#4A3410" stroke-width="1.4" d="M91 474h18l-2 8a7 7 0 0 1-14 0z"/>
+      <path d="M97 166v300" stroke="#FFF3CF" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
+    </g>
+  </g>
+</svg>
